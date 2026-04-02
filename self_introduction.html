@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介書のまとめ方 | 税理士業界への就職に向けて</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            transform: translateX(-5px);
+        }
+
+        .detail-section {
+            padding: 2.5rem;
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease;
+        }
+
+        .detail-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .detail-section h3 {
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.75rem;
+        }
+
+        .detail-point {
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .detail-point h4 {
+            color: var(--text-main);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .detail-point h4::before {
+            content: "✓";
+            color: var(--accent);
+            margin-right: 0.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .detail-point p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            padding-left: 1.8rem;
+            line-height: 1.7;
+        }
+
+        .example-box {
+            background: #f0f9ff;
+            border: 1px dashed #bae6fd;
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-top: 1rem;
+            margin-left: 1.8rem;
+            font-size: 0.9rem;
+            color: #334155;
+        }
+
+        .example-box span.badge {
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-bottom: 0.75rem;
+            display: inline-block;
+            border: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero" style="padding-top: 4rem; padding-bottom: 6rem;">
+        <div class="hero-content" style="text-align: left;">
+            <a href="index.html" class="back-link">&larr; トップページに戻る</a>
+            <h1 style="font-size: 2.2rem;">自己紹介書のまとめ方</h1>
+            <p></p>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1" style="background: rgba(14, 165, 233, 0.25);"></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Format Download -->
+        <section class="detail-section fade-in" style="border-left-color: #10b981; background: #f0fdf4;">
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <div style="font-size: 2rem; margin-right: 1rem;">📥</div>
+                <h3 style="margin: 0; border: none; padding: 0;">履歴書・自己紹介書フォーマット</h3>
+            </div>
+            <p class="section-desc" style="color: #065f46; margin-bottom: 1.5rem;">
+                当サイト推奨の標準フォーマットをご用意しました。こちらからダウンロードして書類作成にご活用ください。
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="resume_format_template.txt" download="履歴書フォーマット.txt" class="cta-button"
+                    style="background: #10b981; color: white; padding: 0.8rem 1.5rem; font-size: 1rem; display: inline-flex; align-items: center; text-decoration: none; border: 2px solid #10b981;">
+                    <span style="margin-right: 0.5rem; font-size: 1.2rem;">📝</span> 履歴書フォーマット
+                </a>
+                <a href="cv_format_template.txt" download="職務経歴書フォーマット.txt" class="cta-button"
+                    style="background: white; color: #10b981; border: 2px solid #10b981; padding: 0.8rem 1.5rem; font-size: 1rem; display: inline-flex; align-items: center; text-decoration: none;">
+                    <span style="margin-right: 0.5rem; font-size: 1.2rem;">📄</span> 自己紹介書フォーマット
+                </a>
+            </div>
+        </section>
+
+        <!-- Document Diagram Section -->
+        <div class="doc-diagram-container fade-in">
+            <!-- Left Annotations -->
+            <div class="doc-annotations">
+                <div class="annotation-item">
+                    <div class="anno-num">1</div>
+                    <div class="anno-text">
+                        <h4 class="anno-title">職務経歴（アルバイト）</h4>
+                        <p>これまでのアルバイト経験（社名、期間、職務内容）を記載します。社会人経験がない場合は、継続期間や役割（リーダー等）を明記し、責任感を持って取り組んだ姿勢を示しましょう。</p>
+                    </div>
+                </div>
+                <div class="annotation-item">
+                    <div class="anno-num">2</div>
+                    <div class="anno-text">
+                        <h4 class="anno-title">資格など</h4>
+                        <p>取得済みの資格に加え、税理士試験の<strong>「科目合格」</strong>や<strong>「受験予定」</strong>を必ず併記します。学習の進捗と意欲を伝える重要な項目です。</p>
+                    </div>
+                </div>
+                <div class="annotation-item">
+                    <div class="anno-num">3</div>
+                    <div class="anno-text">
+                        <h4 class="anno-title">自己PR：3段構成</h4>
+                        <p><strong>「①結論 ➔ ②エピソード ➔ ③貢献への落とし込み」</strong>の順で構成します。自分の強みが実務でどう活きるかを具体的にイメージさせることがポイントです。</p>
+                    </div>
+                </div>
+                <div class="annotation-item">
+                    <div class="anno-num">4</div>
+                    <div class="anno-text">
+                        <h4 class="anno-title">志望動機：3つの軸</h4>
+                        <p><strong>「①きっかけ ➔ ②魅力 ➔ ③将来の税理士像」</strong>を軸に作成します。なぜ他業界ではなく税理士業界なのか、そして入社後にどう成長したいかを言語化しましょう。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Mockup -->
+            <div class="doc-mockup">
+                <h3 class="doc-title-mock">自己紹介書</h3>
+                <div class="doc-date-name">
+                    202×年 〇月 〇日現在<br>
+                    氏名 <span style="text-decoration: underline;">大原 やまと</span>
+                </div>
+                
+                <div class="doc-section-mock">
+                    <h4>職務経歴（アルバイト）</h4>
+                    <p>株式会社大原フード（202×年〇月～現在）<br>
+                    ホールでの接客、キッチンでの調理補助、レジ業務、スタッフのシフト管理を担当。現在はバイトリーダーとして後輩の指導にもあたっています。</p>
+                </div>
+                
+                <div class="doc-section-mock">
+                    <h4>資格など</h4>
+                    <ul>
+                        <li>日商簿記2級（202×年〇月 合格）</li>
+                        <li>税理士試験 簿記論（202×年〇月 合格）</li>
+                        <li>税理士試験 財務諸表論（202×年〇月 合格）</li>
+                        <li>202×年 8月に「法人税法」を受験予定（現在、大原専門学校にて学習中）</li>
+                    </ul>
+                </div>
+                
+                <div class="doc-section-mock">
+                    <h4>自己PR</h4>
+                    <p>私の長所は相手を思いやったコミュニケーションが取れることと、目標に向けて努力を続ける力です。<br>
+                        アルバイトではバイトリーダーとして後輩育成に取り組み、業務の目的まで丁寧に説明し、ミスの振り返りを徹底することで信頼を得てきました。また、10年間続けたサッカーでは自主練習とチームへの提案を継続し、チームを大阪ベスト8へ導きました。<br>
+                        これらの経験を活かし、税理士補助としても周囲と円滑に連携しながら業務を正確に遂行し、継続的な努力で専門知識を高めることで、顧客や職場から信頼される存在として貢献していきたいと考えております。
+                    </p>
+                </div>
+
+                <div class="doc-section-mock" style="margin-bottom: 0;">
+                    <h4>志望動機</h4>
+                    <p>簿記の勉強を通じて会計の仕組みや企業活動の流れを理解する中で、その知識が経営を支える重要な役割を担っていることに魅力を感じ、税理士資格を志すようになりました。<br>
+                        学ぶ中で、経営者は日々さまざまな課題や不安を抱えながら意思決定を行っていることを知り、そのような方々を専門知識で支えられる存在になりたいと考えるようになりました。<br>
+                        これまで培ってきた会計・税務の知識を活かし、数字の面から支えるだけでなく、気軽に相談できる存在として寄り添い、経営者にとって信頼されるパートナーとなれる税理士を目指したいと考えております。
+                        <span style="display:block; text-align:right; margin-top:0.5rem;">以上</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section fade-in" style="margin-top: 3rem;">
+            <div class="cta-content">
+                <h3>書類の添削もサポートします！</h3>
+                <p>一人で悩まずに、完成度が上がるようプロの視点でアドバイスをいたします。</p>
+                <button class="cta-button" onclick="window.location.href='index.html'">トップページへ戻る</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+
+</html>
