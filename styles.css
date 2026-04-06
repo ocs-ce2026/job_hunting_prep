@@ -543,6 +543,14 @@ body {
     margin-right: auto;
 }
 
+.cta-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 0.5rem;
+}
+
 .cta-button {
     background: white;
     color: var(--accent);
@@ -557,8 +565,31 @@ body {
 }
 
 .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-subtle {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button-subtle:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Animations */
