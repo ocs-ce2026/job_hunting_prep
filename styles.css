@@ -58,15 +58,52 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.75rem;
     line-height: 1.2;
 }
 
-.hero p {
-    font-size: 1.125rem;
-    opacity: 0.9;
+.hero-subtitle {
+    font-size: 1.15rem;
+    font-weight: 500;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+    letter-spacing: 0.02em;
+}
+
+.site-intro-section {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 3.5rem 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.1);
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.site-intro-label {
+    display: inline-block;
+    background: #eff6ff;
+    color: var(--primary-dark);
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: 1px solid #dbeafe;
+}
+
+.site-intro-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-main);
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .hero-bg-shapes .shape {
