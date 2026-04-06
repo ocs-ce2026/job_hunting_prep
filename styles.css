@@ -881,51 +881,56 @@ body {
     .doc-diagram-container {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        overflow-x: hidden;
     }
     .doc-annotations {
         width: 100%;
         margin-bottom: 2rem;
     }
     .doc-mockup {
-        width: 100%;
+        width: 100% !important;
         max-width: 100%;
-        padding: 1rem 0.8rem;
+        padding: 1rem 0.6rem; 
         min-height: auto;
         aspect-ratio: 1 / 1.414;
-        font-size: 0.58rem;
+        font-size: 0.55rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        word-break: break-all;
     }
     .doc-title-mock {
-        font-size: 0.72rem;
-        letter-spacing: 0.3em;
-        margin-bottom: 0.5rem;
-    }
-    .doc-date-name {
-        font-size: 0.58rem;
-        margin-bottom: 0.5rem;
-    }
-    .doc-section-mock {
+        font-size: 0.68rem;
+        letter-spacing: 0.2em;
         margin-bottom: 0.4rem;
     }
+    .doc-date-name {
+        font-size: 0.52rem;
+        margin-bottom: 0.4rem;
+    }
+    .doc-section-mock {
+        margin-bottom: 0.3rem;
+    }
     .doc-section-mock h4 {
-        font-size: 0.65rem;
-        margin-bottom: 0.15rem;
-        padding-bottom: 0.15rem;
+        font-size: 0.6rem;
+        margin-bottom: 0.12rem;
+        padding-bottom: 0.12rem;
     }
     .doc-section-mock p, .doc-section-mock ul {
-        font-size: 0.55rem;
-        line-height: 1.2;
-        margin-left: 0.6rem;
+        font-size: 0.52rem;
+        line-height: 1.15;
+        margin-left: 0.5rem;
     }
     .doc-section-mock li {
-        margin-bottom: 0.1rem;
+        margin-bottom: 0.08rem;
     }
     .doc-tip-container {
-        margin-top: -0.3rem;
-        margin-bottom: 0.5rem;
+        margin-top: -0.2rem;
+        margin-bottom: 0.4rem;
     }
     .doc-tip-badge {
-        font-size: 0.55rem;
-        padding: 0.05rem 0.4rem;
+        font-size: 0.5rem;
+        padding: 0.05rem 0.35rem;
     }
     .annotation-item:not(:last-child)::after {
         display: none;
