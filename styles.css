@@ -731,6 +731,23 @@ body {
     padding-bottom: 0.15rem;
 }
 
+.doc-tip-container {
+    text-align: center;
+    margin-top: -0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.doc-tip-badge {
+    display: inline-block;
+    background: #fff7ed;
+    color: #9a3412;
+    border: 1px solid #ffedd5;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 .doc-date-name {
     text-align: right;
     font-size: 0.75rem;
@@ -804,9 +821,42 @@ body {
     .doc-mockup {
         width: 100%;
         max-width: 100%;
-        padding: 3rem 2rem;
+        padding: 1.5rem 1rem;
         min-height: auto;
         aspect-ratio: 1 / 1.414;
+        font-size: 0.65rem;
+    }
+    .doc-title-mock {
+        font-size: 0.8rem;
+        letter-spacing: 0.4em;
+        margin-bottom: 0.8rem;
+    }
+    .doc-date-name {
+        font-size: 0.65rem;
+        margin-bottom: 0.8rem;
+    }
+    .doc-section-mock {
+        margin-bottom: 0.8rem;
+    }
+    .doc-section-mock h4 {
+        font-size: 0.72rem;
+        margin-bottom: 0.3rem;
+    }
+    .doc-section-mock p, .doc-section-mock ul {
+        font-size: 0.62rem;
+        line-height: 1.25;
+        margin-left: 0.8rem;
+    }
+    .doc-section-mock li {
+        margin-bottom: 0.2rem;
+    }
+    .doc-tip-container {
+        margin-top: -0.4rem;
+        margin-bottom: 0.8rem;
+    }
+    .doc-tip-badge {
+        font-size: 0.6rem;
+        padding: 0.1rem 0.5rem;
     }
     .annotation-item:not(:last-child)::after {
         display: none;
