@@ -75,12 +75,18 @@ body {
 
 .site-intro-section {
     background: var(--card-bg);
-    border-radius: 16px;
-    padding: 3.5rem 2.5rem;
-    margin-bottom: 3rem;
-    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.1);
+    border-radius: 20px;
+    padding: 4rem 3rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
     border: 1px solid #e2e8f0;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-intro-header {
+    margin-bottom: 2.5rem;
 }
 
 .site-intro-label {
@@ -91,19 +97,60 @@ body {
     border-radius: 9999px;
     font-size: 0.8rem;
     font-weight: 700;
-    margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     border: 1px solid #dbeafe;
 }
 
+.site-intro-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.site-intro-illustration {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-intro-illustration img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+    border-radius: 12px;
+}
+
+.intro-deco-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, rgba(14, 165, 233, 0) 70%);
+    border-radius: 50%;
+    z-index: 1;
+    transform: scale(1.5);
+}
+
+.site-intro-body {
+    flex: 1.5;
+}
+
+.site-intro-heading {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+}
+
 .site-intro-text {
-    font-size: 1.1rem;
-    line-height: 1.9;
+    font-size: 1.05rem;
+    line-height: 1.8;
     color: var(--text-main);
-    max-width: 750px;
-    margin: 0 auto;
-    text-align: left;
 }
 
 .hero-bg-shapes .shape {
@@ -690,6 +737,26 @@ body {
     .chev-step:last-child {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         padding-bottom: 2rem;
+    }
+
+    .site-intro-section {
+        padding: 3rem 1.5rem;
+        text-align: center;
+    }
+
+    .site-intro-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .site-intro-illustration {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .site-intro-heading {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
     }
 }
 
