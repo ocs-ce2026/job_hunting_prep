@@ -148,7 +148,7 @@ body {
 }
 
 .site-intro-text {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     line-height: 1.8;
     color: var(--text-main);
 }
