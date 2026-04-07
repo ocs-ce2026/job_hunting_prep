@@ -108,7 +108,12 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">就活準備<span>まとめ</span></a>
-            <ul class="nav-links">
+            <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html#self-analysis">自己分析</a></li>
                 <li><a href="index.html#document-prep">書類作成</a></li>
                 <li><a href="index.html#interview-prep">面接対策</a></li>
@@ -116,6 +121,7 @@
                 <li><a href="https://www.o-hara-cs.com/system/contact/" class="nav-cta">無料相談</a></li>
             </ul>
         </div>
+        <div class="nav-overlay" id="nav-overlay"></div>
     </nav>
 
     <header class="hero" style="padding-top: 4rem; padding-bottom: 6rem;">
@@ -250,10 +256,43 @@
                 <p style="font-size: 0.85rem; margin-top: 1.25rem; opacity: 0.8;">※既に登録している方は、専属のアドバイザーへお気軽にご相談ください。</p>
             </div>
         </div>
+        </div>
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="index.html" class="footer-logo">就活準備<span>まとめ</span></a>
+            <p class="copyright">&copy; Ohara CareerStaff,Inc. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Navigation Toggle Logic
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.getElementById('nav-links');
+            const navOverlay = document.getElementById('nav-overlay');
+
+            const toggleMenu = () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                navOverlay.classList.toggle('active');
+                document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+            };
+
+            if (navToggle) {
+                navToggle.addEventListener('click', toggleMenu);
+                navOverlay.addEventListener('click', toggleMenu);
+
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navLinks.classList.contains('active')) {
+                            toggleMenu();
+                        }
+                    });
+                });
+            }
+
             const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
