@@ -156,6 +156,123 @@
             </div>
         </section>
 
+        <!-- Grooming & Appearance -->
+        <section id="grooming" class="card fade-in">
+            <div class="card-header">
+                <div class="icon-wrapper">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                </div>
+                <h2>身だしなみチェック</h2>
+            </div>
+            <p class="section-desc">第一印象は「清潔感」で決まります。面接官に信頼感を与える基本のチェックポイントを確認しましょう。</p>
+
+            <div class="grooming-container">
+                <div class="grooming-principles">
+                    <div class="principle-item">
+                        <span class="principle-num">01</span>
+                        <h4>清潔感</h4>
+                        <p>ヨレや汚れのない服装、整った髪型</p>
+                    </div>
+                    <div class="principle-item">
+                        <span class="principle-num">02</span>
+                        <h4>健康的</h4>
+                        <p>正しい姿勢と明るい表情</p>
+                    </div>
+                    <div class="principle-item">
+                        <span class="principle-num">03</span>
+                        <h4>調和</h4>
+                        <p>場にふさわしい控えめな装い</p>
+                    </div>
+                </div>
+
+                <div class="tabs-nav">
+                    <button class="tab-btn active" onclick="showGrooming('male')">男性</button>
+                    <button class="tab-btn" onclick="showGrooming('female')">女性</button>
+                </div>
+
+                <!-- Male Grooming -->
+                <div id="male-grooming" class="tab-content active">
+                    <div class="grooming-grid">
+                        <div class="grooming-illu">
+                            <img src="images/male_grooming.png" alt="Male Job Seeker">
+                        </div>
+                        <div class="grooming-checklist">
+                            <div class="checklist-group">
+                                <h4>頭髪・顔まわり</h4>
+                                <ul class="checklist-items">
+                                    <li>黒髪、耳にかからない短髪</li>
+                                    <li>おでこを出して明るい印象に</li>
+                                    <li>髭の剃り残しがない</li>
+                                    <li>寝癖や整髪料の付け過ぎ注意</li>
+                                </ul>
+                            </div>
+                            <div class="checklist-group">
+                                <h4>服装（スーツ・シャツ）</h4>
+                                <ul class="checklist-items">
+                                    <li>黒または濃紺の無地スーツ</li>
+                                    <li>サイズが合っているか</li>
+                                    <li>白い無地のワイシャツ（シワなし）</li>
+                                    <li>一番下のボタンは外す</li>
+                                    <li>ネクタイは派手すぎないもの</li>
+                                </ul>
+                            </div>
+                            <div class="checklist-group">
+                                <h4>足元・小物</h4>
+                                <ul class="checklist-items">
+                                    <li>黒の靴（磨かれているか）</li>
+                                    <li>ベルトと靴の色を合わせる</li>
+                                    <li>黒・紺の長いソックス</li>
+                                    <li>自立するビジネスバッグ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Female Grooming -->
+                <div id="female-grooming" class="tab-content">
+                    <div class="grooming-grid">
+                        <div class="grooming-illu">
+                            <img src="images/female_grooming.png" alt="Female Job Seeker">
+                        </div>
+                        <div class="grooming-checklist">
+                            <div class="checklist-group">
+                                <h4>頭髪・メイク</h4>
+                                <ul class="checklist-items">
+                                    <li>黒髪、長い場合は一つに結ぶ</li>
+                                    <li>おでこを出して爽やかに</li>
+                                    <li>健康的でナチュラルなメイク</li>
+                                    <li>派手なネイルやアクセは控える</li>
+                                </ul>
+                            </div>
+                            <div class="checklist-group">
+                                <h4>服装（スーツ・ブラウス）</h4>
+                                <ul class="checklist-items">
+                                    <li>黒または濃紺の無地スーツ</li>
+                                    <li>サイズが合っているか</li>
+                                    <li>白い無地のブラウス</li>
+                                    <li>ジャケットのボタンは全て留める</li>
+                                    <li>スカートは膝丈が理想</li>
+                                </ul>
+                            </div>
+                            <div class="checklist-group">
+                                <h4>足元・小物</h4>
+                                <ul class="checklist-items">
+                                    <li>黒のパンプス（3-5cmヒール）</li>
+                                    <li>肌の色に合ったストッキング</li>
+                                    <li>予備のストッキングを携帯</li>
+                                    <li>自立するビジネスバッグ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Interview Preparation -->
         <section id="interview-prep" class="card fade-in">
             <div class="card-header">
@@ -169,26 +286,6 @@
                 <h2>面接対策</h2>
             </div>
             <p class="section-desc">本番でスムーズに答えられるよう、回答の引き出しを準備しておきましょう。</p>
-
-            <!-- Grooming Check -->
-            <div class="future-vision-card fade-in"
-                style="border-left-color: var(--accent); background: #f0f9ff; margin-bottom: 2rem; margin-top: 0;">
-                <div class="future-header">
-                    <h4 style="color: var(--accent-hover);"><span
-                            style="font-size: 1.2rem; margin-right: 0.25rem;">✨</span> 面接前の基本！身だしなみ・第一印象チェック</h4>
-                </div>
-                <div class="future-body">
-                    <ul class="doc-sublist" style="margin-top: 1rem; margin-bottom: 1rem; font-size: 0.9rem;">
-                        <li style="margin-bottom: 10px;"><strong>服装・清潔感 :</strong> スーツやシャツにシワ・汚れはないか。（靴の汚れも見られています）</li>
-                        <li style="margin-bottom: 10px;"><strong>髪型・表情 :</strong> お辞儀をした際に目元が隠れないか。明るく誠実な表情・トーンで話せるか。
-                        </li>
-                        <li style="margin-bottom: 10px;"><strong>持ち物 :</strong> 足元に置いたときに自立するカバンか。筆記用具、提出書類は揃っているか。</li>
-                    </ul>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">💡
-                        <strong>税理士業界は「信頼感」が命です。</strong> 面接官はあなたが「大切なお客様（経営者）の前に出しても恥ずかしくない人物か」という視点でもチェックしています。
-                    </p>
-                </div>
-            </div>
             <div class="chat-diagram">
                 <!-- Q1 -->
                 <div class="chat-row">
@@ -382,6 +479,27 @@
                 observer.observe(element);
             });
         });
+
+        // Grooming Tab Switcher
+        function showGrooming(gender) {
+            // Update tabs
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.includes(gender === 'male' ? '男性' : '女性'));
+            });
+
+            // Update content
+            const maleContent = document.getElementById('male-grooming');
+            const femaleContent = document.getElementById('female-grooming');
+
+            if (gender === 'male') {
+                maleContent.classList.add('active');
+                femaleContent.classList.remove('active');
+            } else {
+                maleContent.classList.remove('active');
+                femaleContent.classList.add('active');
+            }
+        }
     </script>
 </body>
 
