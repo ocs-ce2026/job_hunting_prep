@@ -69,28 +69,13 @@ body {
     align-items: center;
     gap: 0.4rem;
     letter-spacing: -0.01em;
-    white-space: nowrap;
-}
-
-.nav-logo span {
-    color: var(--accent);
-}
-
-.nav-logo small {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    margin-left: 0.2rem;
-    border-left: 1px solid #e2e8f0;
-    padding-left: 0.5rem;
 }
 
 @media (max-width: 480px) {
     .nav-logo {
         font-size: 0.9rem;
-    }
-    .nav-logo small {
-        display: none;
+        white-space: normal;
+        line-height: 1.2;
     }
 }
 
