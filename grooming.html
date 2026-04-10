@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>詳細身だしなみチェック | 大原キャリアスタッフ関西・九州／キャリアエンジン</title>
+    <title>男女別の身だしなみチェックポイント | 大原キャリアスタッフ関西・九州／キャリアエンジン</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,31 +28,63 @@
             transform: translateX(-5px);
         }
 
-        .grooming-detail-card {
-            background: white;
-            border-radius: 20px;
-            padding: 3rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        .detail-section {
+            padding: 2.5rem;
+            background: #fff;
+            border-radius: 12px;
             margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease;
         }
 
-        .page-intro {
-            margin-bottom: 3rem;
-            text-align: center;
+        .detail-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
         }
 
-        .page-intro h2 {
-            font-size: 2rem;
+        .detail-section h3 {
+            font-size: 1.4rem;
             color: var(--primary-dark);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
         }
 
-        .page-intro p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
+        .detail-point {
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
         }
+
+        .detail-point h4 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .detail-point p {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin-bottom: 0;
+            line-height: 1.6;
+            padding-left: 1.5rem;
+        }
+        
+        /* Gender Specific Colors */
+        .male-section { border-left-color: #3b82f6; }
+        .male-section h3 { color: #1e40af; border-bottom-color: #dbeafe; }
+        .male-section .detail-point h4 { color: #2563eb; }
+        
+        .female-section { border-left-color: #ec4899; }
+        .female-section h3 { color: #be185d; border-bottom-color: #fce7f3; }
+        .female-section .detail-point h4 { color: #db2777; }
     </style>
 </head>
 
@@ -79,8 +111,8 @@
     <header class="hero" style="padding-top: 4rem; padding-bottom: 6rem;">
         <div class="hero-content" style="text-align: left;">
             <a href="index.html" class="back-link">&larr; トップページに戻る</a>
-            <h1 style="font-size: 2.2rem;">男女別・詳細身だしなみチェック</h1>
-            <p>面接官に好印象を与えるための、具体的なチェックリストです。</p>
+            <h1 style="font-size: 2.2rem;">【男女別】身だしなみチェックポイント</h1>
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-top: 1rem;">税理士業界の面接で求められる「清潔感」と「信頼感」に直結する重要項目をまとめました。</p>
         </div>
         <div class="hero-bg-shapes">
             <div class="shape shape-1" style="background: rgba(14, 165, 233, 0.25);"></div>
@@ -88,112 +120,76 @@
     </header>
 
     <main class="container">
-        <section class="grooming-detail-card fade-in">
-            <div class="tabs-nav">
-                <button class="tab-btn active" onclick="showGrooming('male')">男性のチェックポイント</button>
-                <button class="tab-btn" onclick="showGrooming('female')">女性のチェックポイント</button>
+        
+        <!-- Male Grooming Section -->
+        <section class="detail-section male-section fade-in">
+            <h3><span style="font-size: 1.8rem; margin-right: 0.75rem;">👔</span> 男性編：チェックポイント5選</h3>
+            
+            <div class="detail-point">
+                <h4>1. 髪型（ヘアスタイル）</h4>
+                <p>清潔感第一の短髪が基本です。前髪は目にかからない長さにし、耳周りと襟足はスッキリと整えましょう。寝ぐせは厳禁で、不自然にテカる過度なスタイリング剤も避けます。</p>
             </div>
-
-            <!-- Male Grooming -->
-            <div id="male-grooming" class="tab-content active">
-                <div class="progress-wrapper">
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" id="male-progress"></div>
-                    </div>
-                    <div class="progress-text">完了: <span id="male-count" class="progress-count">0</span> / 13</div>
-                </div>
-                <div class="grooming-grid">
-                    <div class="grooming-illu">
-                        <img src="images/male_grooming.png" alt="Male Job Seeker">
-                    </div>
-                    <div class="grooming-checklist">
-                        <div class="checklist-group">
-                            <h4>頭髪・顔まわり</h4>
-                            <ul class="checklist-items">
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">黒髪、耳にかからない短髪</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">おでこを出して明るい印象に</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">髭の剃り残しがない</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">寝癖や整髪料の付け過ぎ注意</span></label></li>
-                            </ul>
-                        </div>
-                        <div class="checklist-group">
-                            <h4>服装（スーツ・シャツ）</h4>
-                            <ul class="checklist-items">
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">黒または濃紺の無地スーツ</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">サイズが合っているか</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">白い無地のワイシャツ（シワなし）</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">一番下のボタンは外す</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">ネクタイは派手すぎないもの</span></label></li>
-                            </ul>
-                        </div>
-                        <div class="checklist-group">
-                            <h4>足元・小物</h4>
-                            <ul class="checklist-items">
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">黒の靴（磨かれているか）</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">ベルトと靴の色を合わせる</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">黒・紺の長いソックス</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">自立するビジネスバッグ</span></label></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="detail-point">
+                <h4>2. ヒゲ・眉毛</h4>
+                <p>ヒゲは剃り残しがないよう、面接当日の朝に丁寧に処理してください。眉毛は細くしすぎず、ボサボサにならない程度に自然に整えておくと好印象です。</p>
             </div>
+            
+            <div class="detail-point">
+                <h4>3. スーツ・ネクタイ</h4>
+                <p>スーツは紺やグレーの落ち着いた色（無地やシャドーストライプ）が無難です。ネクタイは派手すぎない青系やエンジ系のストライプ柄・小紋柄を選ぶと、真面目な印象を与えられます。</p>
+            </div>
+            
+            <div class="detail-point">
+                <h4>4. シャツ</h4>
+                <p>無地の白が基本です。襟のヨレや、首回り・袖口の汚れに特に注意し、しっかりアイロンがけされたものを着用してください。ボタンダウンシャツはカジュアル要素が強いため面接では避けます。</p>
+            </div>
+            
+            <div class="detail-point">
+                <h4>5. 足元（靴下）と時計</h4>
+                <p>靴下はスーツの色に合わせた黒や紺などで、座った時にすねが見えない丈（ふくらはぎ丈）を選びます。時計はスポーツタイプや派手なものを避け、シンプルなビジネス用を着用しましょう。</p>
+            </div>
+        </section>
 
-            <!-- Female Grooming -->
-            <div id="female-grooming" class="tab-content">
-                <div class="progress-wrapper">
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" id="female-progress"></div>
-                    </div>
-                    <div class="progress-text">完了: <span id="female-count" class="progress-count">0</span> / 13</div>
-                </div>
-                <div class="grooming-grid">
-                    <div class="grooming-illu">
-                        <img src="images/female_grooming.png" alt="Female Job Seeker">
-                    </div>
-                    <div class="grooming-checklist">
-                        <div class="checklist-group">
-                            <h4>頭髪・メイク</h4>
-                            <ul class="checklist-items">
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">黒髪、長い場合は一つに結ぶ</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">おでこを出して爽やかに</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">健康的でナチュラルなメイク</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">派手なネイルやアクセは控える</span></label></li>
-                            </ul>
-                        </div>
-                        <div class="checklist-group">
-                            <h4>服装（スーツ・ブラウス）</h4>
-                            <ul class="checklist-items">
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">黒または濃紺の無地スーツ</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">サイズが合っているか</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">白い無地のブラウス</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">ジャケットのボタンは全て留める</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">スカートは膝丈が理想</span></label></li>
-                            </ul>
-                        </div>
-                        <div class="checklist-group">
-                            <h4>足元・小物</h4>
-                            <ul class="checklist-items">
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">黒のパンプス（3-5cmヒール）</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">肌の色に合ったストッキング</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">予備のストッキングを携帯</span></label></li>
-                                <li><label class="check-label"><input type="checkbox"><span class="check-text">自立するビジネスバッグ</span></label></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <!-- Female Grooming Section -->
+        <section class="detail-section female-section fade-in">
+            <h3><span style="font-size: 1.8rem; margin-right: 0.75rem;">👠</span> 女性編：チェックポイント5選</h3>
+            
+            <div class="detail-point">
+                <h4>1. 髪型（ヘアスタイル）</h4>
+                <p>髪が肩にかかる場合は、黒や茶色の目立たないゴムで一つにまとめます（ハーフアップやポニーテール）。前髪はおでこを出し、ピンで留めるか斜めに流して顔周りを明るく、お辞儀の際に顔にかからないよう工夫しましょう。</p>
+            </div>
+            
+            <div class="detail-point">
+                <h4>2. メイク</h4>
+                <p>ノーメイクはマナー違反と見なされることがあります。健康的な血色感のある「ナチュラルメイク」が基本です。派手なアイシャドウ、ラメ、濃すぎるリップや極端なチークは避けましょう。</p>
+            </div>
+            
+            <div class="detail-point">
+                <h4>3. スーツ・ブラウス</h4>
+                <p>スーツは黒、紺、グレー系の落ち着いたトーンを。ブラウスは白の無地で、スキッパーカラー（活発で明るい印象）かレギュラーカラー（真面目できちんとした印象）が定番です。お辞儀をした際に胸元が開きすぎないよう注意します。</p>
+            </div>
+            
+            <div class="detail-point">
+                <h4>4. ストッキング</h4>
+                <p>自分の肌の色に合ったナチュラルストッキングを必ず着用します。黒タイツや素足はNGです。万が一の伝線に備えて、常にカバンに予備のストッキングを入れておきましょう。</p>
+            </div>
+            
+            <div class="detail-point">
+                <h4>5. 指先・アクセサリー</h4>
+                <p>派手なネイルや大ぶりなアクセサリーは原則NGです（透明なトップコートや、短く清潔に整える程度は可）。時計も装飾が多すぎない、シンプルなビジネス向けデザインを選びます。</p>
             </div>
         </section>
 
         <div class="cta-section fade-in" style="margin-top: 3rem;">
             <div class="cta-content">
-                <h3>身だしなみに自信はありますか？</h3>
-                <p>プロのアドバイザーが客観的な視点でアドバイスします。まずはお気軽にご相談ください。</p>
+                <h3>印象アップのポイントを直接アドバイス！</h3>
+                <p>履歴書の写真やお辞儀の仕方、面接本番での第一印象など、プロの視点でアドバイスします。</p>
                 <div class="cta-button-group">
-                    <a href="https://www.o-hara-cs.com/system/contact/" class="cta-button"
-                        style="text-decoration: none; display: inline-block;">相談を申し込む</a>
+                    <a href="https://www.o-hara-cs.com/system/contact/" class="cta-button" style="text-decoration: none; display: inline-block;">相談を申し込む</a>
                     <a href="index.html" class="cta-button-subtle">トップページへ戻る</a>
                 </div>
+                <p style="font-size: 0.85rem; margin-top: 1.25rem; opacity: 0.8;">※既に登録している方は、専属のアドバイザーへお気軽にご相談ください。</p>
             </div>
         </div>
     </main>
@@ -245,62 +241,7 @@
             document.querySelectorAll('.fade-in').forEach(element => {
                 observer.observe(element);
             });
-
-            // Progress Bar Logic
-            const setupProgress = (gender) => {
-                const container = document.getElementById(`${gender}-grooming`);
-                if (!container) return;
-                
-                const checkboxes = container.querySelectorAll('input[type="checkbox"]');
-                const progressBar = document.getElementById(`${gender}-progress`);
-                const countText = document.getElementById(`${gender}-count`);
-                const total = checkboxes.length;
-
-                const updateProgress = () => {
-                    const checked = container.querySelectorAll('input[type="checkbox"]:checked').length;
-                    const percentage = total === 0 ? 0 : (checked / total) * 100;
-                    
-                    progressBar.style.width = `${percentage}%`;
-                    countText.textContent = checked;
-                    
-                    if (checked === total) {
-                        progressBar.classList.add('completed');
-                        countText.style.color = '#10b981';
-                    } else {
-                        progressBar.classList.remove('completed');
-                        countText.style.color = 'var(--accent)';
-                    }
-                };
-
-                checkboxes.forEach(cb => {
-                    cb.addEventListener('change', updateProgress);
-                });
-                
-                updateProgress(); // init
-            };
-
-            setupProgress('male');
-            setupProgress('female');
         });
-
-        // Grooming Tab Switcher
-        function showGrooming(gender) {
-            const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => {
-                btn.classList.toggle('active', btn.textContent.includes(gender === 'male' ? '男性' : '女性'));
-            });
-
-            const maleContent = document.getElementById('male-grooming');
-            const femaleContent = document.getElementById('female-grooming');
-
-            if (gender === 'male') {
-                maleContent.classList.add('active');
-                femaleContent.classList.remove('active');
-            } else {
-                maleContent.classList.remove('active');
-                femaleContent.classList.add('active');
-            }
-        }
     </script>
 </body>
 
