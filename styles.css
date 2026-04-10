@@ -631,6 +631,71 @@ body {
     font-weight: bold;
 }
 
+/* Grooming Checklist Box */
+.grooming-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.grooming-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.grooming-icon {
+    font-size: 1.5rem;
+}
+
+.grooming-header h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 0;
+}
+
+.grooming-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.grooming-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.grooming-list li {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.grooming-list li strong {
+    color: var(--primary);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.grooming-list li span {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
 /* Interview Chat Diagram */
 .chat-diagram {
     display: flex;
