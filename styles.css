@@ -837,6 +837,33 @@ body {
     transform: translateY(-2px);
 }
 
+.action-btn {
+    background: var(--accent);
+    color: white !important;
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(14, 165, 233, 0.3);
+}
+
+.action-btn svg {
+    margin-right: 0.4rem;
+    width: 20px;
+    height: 20px;
+}
+
 /* Animations */
 .fade-in {
     opacity: 0;
