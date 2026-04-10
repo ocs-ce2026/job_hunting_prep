@@ -188,11 +188,25 @@ body {
     }
 
     /* Staggered animation for links */
-    .nav-links.active li:nth-child(1) { transition-delay: 0.1s; }
-    .nav-links.active li:nth-child(2) { transition-delay: 0.15s; }
-    .nav-links.active li:nth-child(3) { transition-delay: 0.2s; }
-    .nav-links.active li:nth-child(4) { transition-delay: 0.25s; }
-    .nav-links.active li:nth-child(5) { transition-delay: 0.3s; }
+    .nav-links.active li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .nav-links.active li:nth-child(2) {
+        transition-delay: 0.15s;
+    }
+
+    .nav-links.active li:nth-child(3) {
+        transition-delay: 0.2s;
+    }
+
+    .nav-links.active li:nth-child(4) {
+        transition-delay: 0.25s;
+    }
+
+    .nav-links.active li:nth-child(5) {
+        transition-delay: 0.3s;
+    }
 
     .nav-links a {
         font-size: 1.1rem;
@@ -319,7 +333,7 @@ body {
     height: auto;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.05));
     border-radius: 12px;
 }
 
@@ -1020,7 +1034,7 @@ body {
 .checklist-items li:hover {
     border-color: #cbd5e1;
     transform: translateX(4px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
 .check-label {
@@ -1065,7 +1079,7 @@ body {
     border-width: 0 2px 2px 0;
 }
 
-.check-label input[type="checkbox"]:checked + .check-text {
+.check-label input[type="checkbox"]:checked+.check-text {
     color: var(--text-muted);
     text-decoration: line-through;
 }
@@ -1090,7 +1104,7 @@ body {
     border-radius: 999px;
     overflow: hidden;
     position: relative;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .progress-bar {
@@ -1113,24 +1127,27 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0.2) 25%,
-        transparent 25%,
-        transparent 50%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.2) 75%,
-        transparent 75%,
-        transparent
-    );
+    background: linear-gradient(45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent);
     background-size: 1.5rem 1.5rem;
     animation: stripemove 1s linear infinite;
     opacity: 0.8;
 }
 
 @keyframes stripemove {
-    0% { background-position: 1.5rem 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 1.5rem 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .progress-text {
@@ -1153,14 +1170,22 @@ body {
         gap: 0.75rem;
         padding: 1rem;
     }
+
     .progress-text {
         text-align: right;
     }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive amendments for grooming */
@@ -1170,9 +1195,11 @@ body {
         align-items: center;
         gap: 2rem;
     }
+
     .checklist-items {
         grid-template-columns: 1fr;
     }
+
     .grooming-illu {
         max-width: 250px;
     }
@@ -1343,8 +1370,9 @@ body {
     box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.12);
     position: relative;
     max-width: 800px;
-    width: 600px; 
-    min-height: 848px; /* Correct A4 height for 600px width (600 * 1.414) */
+    width: 600px;
+    min-height: 848px;
+    /* Correct A4 height for 600px width (600 * 1.414) */
     margin: 0 auto;
     font-size: 0.72rem;
 }
@@ -1420,7 +1448,8 @@ body {
     font-size: 0.7rem;
 }
 
-.doc-section-mock p, .doc-section-mock ul {
+.doc-section-mock p,
+.doc-section-mock ul {
     font-size: 0.7rem;
     color: #334155;
     line-height: 1.3;
@@ -1453,14 +1482,16 @@ body {
         width: 100%;
         overflow-x: hidden;
     }
+
     .doc-annotations {
         width: 100%;
         margin-bottom: 2rem;
     }
+
     .doc-mockup {
         width: 100% !important;
         max-width: 100%;
-        padding: 1rem 0.6rem; 
+        padding: 1rem 0.6rem;
         min-height: auto;
         aspect-ratio: 1 / 1.414;
         font-size: 0.55rem;
@@ -1468,43 +1499,54 @@ body {
         overflow: hidden;
         word-break: break-all;
     }
+
     .doc-title-mock {
         font-size: 0.68rem;
         letter-spacing: 0.2em;
         margin-bottom: 0.4rem;
     }
+
     .doc-date-name {
         font-size: 0.52rem;
         margin-bottom: 0.4rem;
     }
+
     .doc-section-mock {
         margin-bottom: 0.3rem;
     }
+
     .doc-section-mock h4 {
         font-size: 0.6rem;
         margin-bottom: 0.12rem;
         padding-bottom: 0.12rem;
     }
-    .doc-section-mock p, .doc-section-mock ul {
+
+    .doc-section-mock p,
+    .doc-section-mock ul {
         font-size: 0.52rem;
         line-height: 1.15;
         margin-left: 0.5rem;
     }
+
     .doc-section-mock li {
         margin-bottom: 0.08rem;
     }
+
     .doc-tip-container {
         margin-top: -0.2rem;
         margin-bottom: 0.4rem;
     }
+
     .doc-tip-badge {
         font-size: 0.5rem;
         padding: 0.05rem 0.35rem;
     }
+
     .annotation-item:not(:last-child)::after {
         display: none;
     }
 }
+
 /* Footer */
 .site-footer {
     background-color: #ffffff;
