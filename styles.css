@@ -696,6 +696,145 @@ body {
     line-height: 1.5;
 }
 
+/* Grooming Diagram Layout (For grooming.html) */
+.grooming-diagram-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    display: flex;
+    justify-content: center;
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 3rem 0;
+    min-height: 600px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.grooming-diagram-image {
+    position: relative;
+    z-index: 1;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grooming-diagram-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.05));
+}
+
+.diagram-point {
+    position: absolute;
+    width: 280px;
+    background: white;
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    z-index: 2;
+    border-top: 4px solid;
+    transition: transform 0.2s;
+}
+
+.diagram-point:hover {
+    transform: translateY(-2px);
+    z-index: 3;
+}
+
+.male-point { border-top-color: #3b82f6; }
+.female-point { border-top-color: #ec4899; }
+
+.diagram-point h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.male-point h4 { color: #1e40af; }
+.female-point h4 { color: #be185d; }
+
+.diagram-point p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    margin: 0;
+}
+
+/* Connecting Dashed Lines */
+.diagram-point::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 0;
+    border-top: 2px dashed #cbd5e1;
+    top: 25px;
+}
+
+.point-left::before {
+    right: -60px;
+}
+
+.point-right::before {
+    left: -60px;
+}
+
+.diagram-point::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    top: 21px;
+}
+
+.point-left::after {
+    right: -60px;
+}
+
+.point-right::after {
+    left: -60px;
+}
+
+/* Specific Positions */
+/* Male */
+.m-hair { top: 5%; left: 2%; }
+.m-face { top: 15%; right: 2%; }
+.m-suit { top: 38%; left: 2%; }
+.m-shirt { top: 52%; right: 2%; }
+.m-shoes { top: 80%; left: 2%; }
+
+/* Female */
+.f-hair { top: 5%; left: 2%; }
+.f-makeup { top: 15%; right: 2%; }
+.f-suit { top: 38%; left: 2%; }
+.f-hands { top: 52%; right: 2%; }
+.f-shoes { top: 80%; left: 2%; }
+
+/* Mobile fallback */
+@media (max-width: 850px) {
+    .grooming-diagram-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1.5rem;
+        min-height: auto;
+    }
+    .grooming-diagram-image {
+        width: 200px;
+        margin-bottom: 2rem;
+    }
+    .diagram-point {
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .diagram-point::before, .diagram-point::after {
+        display: none;
+    }
+}
+
 /* Interview Chat Diagram */
 .chat-diagram {
     display: flex;
