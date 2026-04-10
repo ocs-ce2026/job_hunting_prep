@@ -706,7 +706,7 @@ body {
     background: #f8fafc;
     border-radius: 16px;
     padding: 3rem 0;
-    min-height: 600px;
+    min-height: 680px;
     border: 1px solid #e2e8f0;
     overflow: hidden;
 }
@@ -801,17 +801,17 @@ body {
 /* Specific Positions */
 /* Male */
 .m-hair { top: 5%; left: 2%; }
-.m-face { top: 15%; right: 2%; }
+.m-face { top: 18%; right: 2%; }
 .m-suit { top: 38%; left: 2%; }
-.m-shirt { top: 52%; right: 2%; }
-.m-shoes { top: 80%; left: 2%; }
+.m-shirt { top: 55%; right: 2%; }
+.m-shoes { bottom: 5%; left: 2%; }
 
 /* Female */
 .f-hair { top: 5%; left: 2%; }
-.f-makeup { top: 15%; right: 2%; }
+.f-makeup { top: 18%; right: 2%; }
 .f-suit { top: 38%; left: 2%; }
-.f-hands { top: 52%; right: 2%; }
-.f-shoes { top: 80%; left: 2%; }
+.f-hands { top: 55%; right: 2%; }
+.f-shoes { bottom: 5%; left: 2%; }
 
 /* Mobile fallback */
 @media (max-width: 850px) {
