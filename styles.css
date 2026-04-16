@@ -63,7 +63,8 @@ body {
 
 .nav-actions {
     display: flex;
-    gap: 1rem; 
+    align-items: center;
+    gap: 1rem;
     margin-left: auto;
 }
 
@@ -108,16 +109,27 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 5rem;
+    justify-content: space-between;
+    /* これが「均等配置」のキモです */
+    width: 100%;
+    /* 親要素の幅いっぱいに広げます */
+    padding: 0;
+    /* 余計な余白があればリセット */
     list-style: none;
     align-items: center;
-    justify-content: center;
+}
+
+.nav-links li {
+    flex: 1;
+    /* 各項目が同じ幅を分け合います */
+    text-align: center;
+    /* 文字を各エリアの真ん中に寄せます */
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 0.95rem;
+    font-size: 0.2rem;
     font-weight: 700;
     padding: 0.8rem 0;
     transition: all 0.2s;
@@ -194,8 +206,8 @@ body {
     }
 
     .nav-links a {
-        font-size: 0.85rem;
-        padding: 0.7rem 0;
+        font-size: 0.1rem;
+        padding: 0.5rem 0;
     }
 }
 
