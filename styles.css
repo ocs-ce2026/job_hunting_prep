@@ -83,7 +83,7 @@ body {
 
 .nav-cta {
     margin-left: auto;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
 }
 
 .nav-logo {
@@ -105,7 +105,7 @@ body {
 
 @media (max-width: 480px) {
     .nav-logo {
-        font-size: 0.8rem;
+        font-size: 0.4rem;
         white-space: normal;
         line-height: 1.2;
     }
