@@ -82,7 +82,7 @@ body {
 }
 
 .nav-cta {
-    margin-left: auto !important;
+    margin-left: auto;
 }
 
 .nav-logo {
@@ -149,7 +149,7 @@ body {
     background: var(--accent);
     color: white;
     padding: 0.6rem 1.25rem;
-    border-radius: 9999px;
+    /* border-radius: 9999px; */
     opacity: 1;
     box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
 }
