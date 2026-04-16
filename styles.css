@@ -49,15 +49,16 @@ body {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(226, 232, 240, 0.4);
-    height: 60px;
+    height: 50px;
 }
 
 .nav-container {
+    width: 100%;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
-    height: 60px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,17 +89,17 @@ body {
     display: flex;
     align-items: center;
     gap: 1.25rem;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 800;
     color: var(--primary-dark);
     text-decoration: none;
-    letter-spacing: -0.01em;
-    line-height: 1.2;
+    letter-spacing: 0em;
+    line-height: 2;
 }
 
 .nav-logo-text {
     border-left: 2px solid #e2e8f0;
-    padding-left: 1.25rem;
+    padding-left: 1rem;
 }
 
 @media (max-width: 480px) {
@@ -274,8 +275,12 @@ body {
     }
 }
 
-opacity: 1;
-transform: translateX(0);
+.site-intro-label {
+    display: inline-block;
+    background: #eff6ff; 
+    color: #1e3a8a; /* 変数を使わずに直接色を入れてみて動くか試す */
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px; /* ここに閉じカッコ } があるか確認！ */
 }
 
 /* Staggered animation for links */
@@ -1932,14 +1937,14 @@ transform: translateX(0);
 }
 
 .message {
-    color: #3b82f6　;
-    font-size: 0.75rem;
+    color: #082297;
+    font-size: 0.9rem;
     letter-spacing: 0.02em;
 }
 
 .copyright {
     color: var(--text-muted);
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     letter-spacing: 0.02em;
 }
 
