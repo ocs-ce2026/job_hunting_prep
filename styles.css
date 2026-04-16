@@ -115,6 +115,35 @@ body {
     box-shadow: 0 6px 15px rgba(14, 165, 233, 0.3);
 }
 
+.nav-logos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0.5rem;
+}
+
+.header-logo {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+    background: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 900px) {
+    .nav-logos {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        justify-content: center;
+    }
+    
+    .header-logo {
+        height: 32px;
+    }
+}
+
 /* Mobile Toggle */
 .nav-toggle {
     display: none;
