@@ -315,7 +315,7 @@ body {
     position: relative;
     background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
     color: white;
-    padding: 10rem 2rem 10rem; /* Increased padding-top significantly to fix overlap */
+    padding: 18rem 2rem 10rem; /* Increased significantly to 18rem to fully clear header */
     text-align: center;
     overflow: hidden;
 }
@@ -463,8 +463,8 @@ body {
 
 /* Container */
 .container {
-    max-width: 900px;
-    margin: -5rem auto 4rem; /* Adjust negative margin slightly if hero is too tall */
+    max-width: 1000px; /* Widened slightly for balance */
+    margin: -3rem auto 4rem; /* Reduced overlap to -3rem to clear hero text */
     padding: 0 1.5rem;
     position: relative;
     z-index: 10;
