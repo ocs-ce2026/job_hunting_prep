@@ -150,9 +150,9 @@ body {
     color: white;
     /* padding: 0.3rem 1.25rem; */
     padding: 0;
-    /* border-radius: 9999px; */
+    border-radius: 9999px;
     opacity: 1;
-    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
+    box-shadow: 0 4px 12px rgba(196, 215, 224, 0.2);
 }
 
 .nav-cta:hover {
