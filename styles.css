@@ -149,7 +149,7 @@ body {
 .nav-cta {
     background: var(--accent);
     color: white;
-    padding: 0.1rem 1.25rem;
+    padding: 0.3rem 1.25rem;
     padding: 0;
     border-radius: 9999px;
     opacity: 1;
