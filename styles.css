@@ -22,7 +22,7 @@ html {
 
 * {
     /* margin: 0; */
-    margin: 3em;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -54,7 +54,6 @@ body {
 }
 
 .nav-container {
-    width: 100%;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -106,7 +105,7 @@ body {
 
 @media (max-width: 480px) {
     .nav-logo {
-        font-size: 0.4rem;
+        font-size: 0.75rem;
         white-space: normal;
         line-height: 1.2;
     }
@@ -134,7 +133,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 0.2rem;
+    font-size: 0.95rem;
     font-weight: 700;
     padding: 0.8rem 0;
     transition: all 0.2s;
@@ -148,7 +147,8 @@ body {
 }
 
 .nav-cta {
-    background: #f8fafc color: #0ea5e9;
+    background: #f8fafc;
+    color: #0ea5e9;
     /* padding: 0.3rem 1.25rem; */
     padding: 0;
     /* border-radius: 9999px; */
@@ -211,7 +211,7 @@ body {
     }
 
     .nav-links a {
-        font-size: 0.1rem;
+        font-size: 0.85rem;
         padding: 0.5rem 0;
     }
 }
@@ -308,16 +308,16 @@ body {
     transition-delay: 0.3s;
 }
 
-.nav-links a {
+/* .nav-links a {
     font-size: 1.1rem;
     display: block;
     padding: 0.5rem;
-}
+} */
 
-.nav-cta {
+/* .nav-cta {
     display: inline-block;
     margin-top: 1rem;
-}
+} */
 
 .nav-overlay {
     position: fixed;
@@ -337,19 +337,17 @@ body {
     opacity: 1;
     visibility: visible;
 }
-}
 
 /* Hero Section */
 .hero {
     position: relative;
     background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
     color: white;
-    padding: 40rem 2rem；
-        /* Increased significantly to 18rem to fully clear header */
-        text-align: center;
+    padding: 8rem 2rem 6rem;
+    /* Increased significantly to 18rem to fully clear header */
+    text-align: center;
     overflow: hidden;
-    padding-top: 40rem !important;
-    padding-bottom: 20rem !important;
+
 }
 
 .hero-content {
@@ -358,7 +356,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 4rem
+    padding-top: 4rem;
 }
 
 .badge {
