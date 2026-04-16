@@ -72,7 +72,9 @@ body {
 }
 
 .nav-main-bar {
-    background: var(--primary);
+    background: #eff6ff;
+    border-top: 1px solid #dbeafe;
+    border-bottom: 1px solid #dbeafe;
 }
 
 .nav-branding {
@@ -132,18 +134,19 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #1e3a8a;
     font-size: 0.95rem;
     font-weight: 700;
-    padding: 0.8rem 0;
+    padding: 0.8rem 0.5rem;
     transition: all 0.2s;
-    opacity: 0.95;
+    opacity: 1;
     display: block;
 }
 
 .nav-links a:hover {
-    color: var(--accent);
-    opacity: 1;
+    color: #0ea5e9;
+    background: rgba(14, 165, 233, 0.08);
+    border-radius: 9999px;
 }
 
 .nav-cta {
