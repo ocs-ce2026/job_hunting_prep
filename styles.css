@@ -50,7 +50,7 @@ body {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(226, 232, 240, 0.4);
-    height: 60px;
+    height: 50px;
 }
 
 .nav-container {
