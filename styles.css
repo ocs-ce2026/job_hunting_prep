@@ -41,7 +41,7 @@ body {
     width: 100%;
     z-index: 1000;
     background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .nav-top {
@@ -228,7 +228,8 @@ body {
 
 @media (max-width: 900px) {
     .nav-toggle {
-        display: none; /* Hide toggle since nav is persistent */
+        display: none;
+        /* Hide toggle since nav is persistent */
     }
 
     .nav-links {
@@ -254,60 +255,61 @@ body {
         transform: none;
     }
 }
-        opacity: 1;
-        transform: translateX(0);
-    }
 
-    /* Staggered animation for links */
-    .nav-links.active li:nth-child(1) {
-        transition-delay: 0.1s;
-    }
+opacity: 1;
+transform: translateX(0);
+}
 
-    .nav-links.active li:nth-child(2) {
-        transition-delay: 0.15s;
-    }
+/* Staggered animation for links */
+.nav-links.active li:nth-child(1) {
+    transition-delay: 0.1s;
+}
 
-    .nav-links.active li:nth-child(3) {
-        transition-delay: 0.2s;
-    }
+.nav-links.active li:nth-child(2) {
+    transition-delay: 0.15s;
+}
 
-    .nav-links.active li:nth-child(4) {
-        transition-delay: 0.25s;
-    }
+.nav-links.active li:nth-child(3) {
+    transition-delay: 0.2s;
+}
 
-    .nav-links.active li:nth-child(5) {
-        transition-delay: 0.3s;
-    }
+.nav-links.active li:nth-child(4) {
+    transition-delay: 0.25s;
+}
 
-    .nav-links a {
-        font-size: 1.1rem;
-        display: block;
-        padding: 0.5rem;
-    }
+.nav-links.active li:nth-child(5) {
+    transition-delay: 0.3s;
+}
 
-    .nav-cta {
-        display: inline-block !important;
-        margin-top: 1rem;
-    }
+.nav-links a {
+    font-size: 1.1rem;
+    display: block;
+    padding: 0.5rem;
+}
 
-    .nav-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgba(15, 23, 42, 0.5);
-        backdrop-filter: blur(4px);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 1040;
-    }
+.nav-cta {
+    display: inline-block !important;
+    margin-top: 1rem;
+}
 
-    .nav-overlay.active {
-        opacity: 1;
-        visibility: visible;
-    }
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1040;
+}
+
+.nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
 }
 
 /* Hero Section */
@@ -315,7 +317,8 @@ body {
     position: relative;
     background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
     color: white;
-    padding: 18rem 2rem 10rem; /* Increased significantly to 18rem to fully clear header */
+    padding: 18rem 2rem 10rem;
+    /* Increased significantly to 18rem to fully clear header */
     text-align: center;
     overflow: hidden;
 }
@@ -361,6 +364,7 @@ body {
     border-radius: 20px;
     padding: 4rem 3rem;
     margin-bottom: 4rem;
+    margin-top: 10rem;
     box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
     border: 1px solid #e2e8f0;
     text-align: left;
@@ -463,8 +467,10 @@ body {
 
 /* Container */
 .container {
-    max-width: 1000px; /* Widened slightly for balance */
-    margin: -3rem auto 4rem; /* Reduced overlap to -3rem to clear hero text */
+    max-width: 1000px;
+    /* Widened slightly for balance */
+    margin: -3rem auto 4rem;
+    /* Reduced overlap to -3rem to clear hero text */
     padding: 0 1.5rem;
     position: relative;
     z-index: 10;
@@ -752,7 +758,7 @@ body {
     padding: 0.75rem 1rem;
     border-radius: 6px;
     border: 1px solid #f1f5f9;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .grooming-list li strong {
@@ -794,7 +800,7 @@ body {
 .grooming-diagram-image img {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.05));
 }
 
 .diagram-point {
@@ -803,7 +809,7 @@ body {
     background: white;
     padding: 1.25rem;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     z-index: 2;
     border-top: 4px solid;
     transition: transform 0.2s;
@@ -814,8 +820,13 @@ body {
     z-index: 3;
 }
 
-.male-point { border-top-color: #3b82f6; }
-.female-point { border-top-color: #ec4899; }
+.male-point {
+    border-top-color: #3b82f6;
+}
+
+.female-point {
+    border-top-color: #ec4899;
+}
 
 .diagram-point h4 {
     font-size: 1.05rem;
@@ -823,8 +834,13 @@ body {
     font-weight: 700;
 }
 
-.male-point h4 { color: #1e40af; }
-.female-point h4 { color: #be185d; }
+.male-point h4 {
+    color: #1e40af;
+}
+
+.female-point h4 {
+    color: #be185d;
+}
 
 .diagram-point p {
     font-size: 0.85rem;
@@ -871,18 +887,56 @@ body {
 
 /* Specific Positions */
 /* Male */
-.m-hair { top: 5%; left: 2%; }
-.m-face { top: 18%; right: 2%; }
-.m-suit { top: 38%; left: 2%; }
-.m-shirt { top: 55%; right: 2%; }
-.m-shoes { bottom: 5%; left: 2%; }
+.m-hair {
+    top: 5%;
+    left: 2%;
+}
+
+.m-face {
+    top: 18%;
+    right: 2%;
+}
+
+.m-suit {
+    top: 38%;
+    left: 2%;
+}
+
+.m-shirt {
+    top: 55%;
+    right: 2%;
+}
+
+.m-shoes {
+    bottom: 5%;
+    left: 2%;
+}
 
 /* Female */
-.f-hair { top: 5%; left: 2%; }
-.f-makeup { top: 18%; right: 2%; }
-.f-suit { top: 38%; left: 2%; }
-.f-hands { top: 55%; right: 2%; }
-.f-shoes { bottom: 5%; left: 2%; }
+.f-hair {
+    top: 5%;
+    left: 2%;
+}
+
+.f-makeup {
+    top: 18%;
+    right: 2%;
+}
+
+.f-suit {
+    top: 38%;
+    left: 2%;
+}
+
+.f-hands {
+    top: 55%;
+    right: 2%;
+}
+
+.f-shoes {
+    bottom: 5%;
+    left: 2%;
+}
 
 /* Mobile fallback */
 @media (max-width: 850px) {
@@ -892,16 +946,20 @@ body {
         padding: 2rem 1.5rem;
         min-height: auto;
     }
+
     .grooming-diagram-image {
         width: 200px;
         margin-bottom: 2rem;
     }
+
     .diagram-point {
         position: static;
         width: 100%;
         margin-bottom: 1rem;
     }
-    .diagram-point::before, .diagram-point::after {
+
+    .diagram-point::before,
+    .diagram-point::after {
         display: none;
     }
 }
