@@ -1245,9 +1245,9 @@ body {
     position: absolute;
     inset: 0;
     border-radius: 9999px;
-    background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, transparent 60%);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.25s ease;
 }
 
 .action-btn:hover::before {
@@ -1255,11 +1255,11 @@ body {
 }
 
 .action-btn:hover {
-    transform: translateY(-2px) scale(1.03);
-    filter: brightness(1.05);
+    transform: translateY(-2px) scale(1.05); /* ←少し大きく */
+    filter: brightness(1.08);
     box-shadow:
-        0 12px 30px rgba(37, 99, 235, 0.25),
-        0 0 0 6px rgba(14, 165, 233, 0.12);
+        0 16px 40px rgba(37, 99, 235, 0.3),
+        0 0 0 8px rgba(14, 165, 233, 0.18); /* ←広げる */
 }
 
 .action-btn svg {
